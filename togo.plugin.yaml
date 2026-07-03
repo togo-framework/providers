@@ -1,0 +1,12 @@
+# togo plugin manifest. `togo install <owner>/<repo>` reads this to wire the
+# plugin into a project.
+name: providers
+description: Runtime, config-driven selection of capability backends (CLI/.env/settings).
+priority: 1            # boots right after core log — must exist before backends select
+
+backend:
+  package: github.com/togo-framework/providers
+
+migrations: []
+frontend: { dir: "" }
+commands: []
